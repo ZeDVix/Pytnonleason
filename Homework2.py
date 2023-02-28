@@ -31,12 +31,14 @@
 #     print(integer_number%10)
 #     integer_number = integer_number//10
 
-# 6. Найти сумму цифр числа.
+# 6. Найти сумму цифру числа.
 # n = int(input("Введите ваше число: "))
+# summa_4isel = 0
 # while n > 0:
-#     digit = n % 1
-#     n = n + digit
-# print(n)
+#     summa_4isel += n % 10
+#     n = n // 10
+# print(summa_4isel)
+
 
 # 7. Найти произведение цифр числа.
 # num = int(input("Введите число: "))
@@ -67,9 +69,10 @@
 
 
 # 10. Найти количество цифр 5 в числе
-count = int(input("Введите число:"))
-count = 0
-while(n == 5):
-    count = count + 1
-    n = n // 10
-print("Количество цифр равно:", count)
+int_num = 5454
+d = 0
+while int_num>0:
+    if int_num%10 == 5:
+        d += 1
+    int_num = int_num//10
+print('количество цифр 5 :', d)
